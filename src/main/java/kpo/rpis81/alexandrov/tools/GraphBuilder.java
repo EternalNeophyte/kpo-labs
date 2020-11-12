@@ -90,7 +90,9 @@ public class GraphBuilder implements Runnable, IFillNullFields<GraphBuilder> {
      */
     private int setChildrenCount(int vertexNumber) {
         return buildMode.equals(BuildMode.FIXED)
-                ? edgesCount - 1
+                ? (vertexNumber < edgesCount + 1
+                        ? edgesCount - 2
+                        : edgesCount - 1)
                 : (vertexNumber < MIN_VERTEX_AMOUNT
                         ? random.nextInt(edgesCount - 1) + 1
                         : random.nextInt(edgesCount));

@@ -7,7 +7,6 @@ package kpo.rpis81.alexandrov.tools;
 public class Runner {
 
     public static void main(String... args) {
-
         GraphBuilder.deploy()
                 .setEdgesCount(4)
                 .setGraphsCount(400)
