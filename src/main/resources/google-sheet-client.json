@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "kpo-labs",
+  "private_key_id": "6c4ab441296c22afef281e89cb9b3eb57aa113d9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCcrHggwvDLMdtR\nIPopVurpET+hqljRqLDu5zFasNo8/iNcCkED1C6rX2WtuFckbOjZug3GI1w754cc\nPFbmtIY9eEql7cDjSzmhqrnEmjbk4btkqjmUOWlOIq9HTO6eA+cdP8j1XKafsJsU\nnxZaN7HsXTxZMCH/O59VN8xIXDO6E1ymGBG6hixJy4hQqWCMChh5A7nfxG0tCqO6\nzawPKu5G+OjJHmZqICkskNIVx0ZurGHbNDPX2S6ZH5nFXGfWS28NOJbTfIntB4mO\n29GsEzOrYyrlaJdkY4bPj86FKXylCDCzl4PVgy/qXLNbZFIFzLCrNmx+/mK0/nL/\nyYLQmPLvAgMBAAECggEADbFGozMmSqJGCDMZNqx+X0KL2YJciZ/ak4zoOh4J4YBW\nCsc11pkGplRYbvRILJcwF0c0lcQLw/IaIGE0BXmlecQ3kes51/BNGx0jZ+4QxudL\nf1XsYYROLCJjFMvBo7tN/Lc3kuoEASGbWODTQHmgA4fdrFXE9g955b+FccizfjS4\nn/Vyoimlk+BeII05yH5xZf5mhHlubLjpCbCkoVQh8xWI9a2/JDSotJlRWhtyp6Au\nACKUgo1jc8CLb+zY4O9EweiuqqUr6dv0r+lucyTFI8a4wePQdVlpzOcZkqZ5tu4e\nF1BjbQUmk5Sbo5aytKKysZuc3h8wv7oywKd8srOb8QKBgQDcFHxFyS9shbSKBGL+\nB28ulN5a39Ev0eQyClWEneVmr8Qyl3PWRdg6X/wwe+pqaTKN1KClxI4wyhbnLPy0\n8dZ+T/RhcsQPi5TX/Ljrw9Ck6Lg7Vv3MwIbosVcrxbPdMbtLz+mTCCqwz1ZG1t9W\nVscaKOAOhkT6Cx8pXgNHJ+CQNQKBgQC2PrQVsL/wYXCHJr3QqT7heAbZCLZ8EQCt\niX2umqA5Fgo/qPRq5zxA1xwiJ3WPYfDuvV/XAQ/ColIEZ0Rl/VGpjHvNZESMOxZB\njRJKcn6UmaAPTH31nwpVtupqI2pFjIQuktR9MQJyvKDNcfuA3xHYwKpbLTHQ+nql\nmIVBnzsjEwKBgEMnxRwOXfhBfGu5FvPpFNYj+w3DyjNLWtSiLqI/BCcnbzj42hIC\nUg7OB0hMJ6W83/5DaZnrtm/Q2thD9ADK4ua8QxgRSx5rO0oFBfB7WglYMg95Zgy6\nmvAaXT0wIMhYSozBrsZ88XnuaqdHHfNcm3iyDFyiQB4EkseutlVaJ74ZAoGAbAir\ntJf8kEES9etPZpyNvBbs6Eez9cQWhMkWiiT7ihu4o5hCnATLwRxDfzOpCwBiVQRK\nBiiI8TZMLHQTJeqPOFUhJtajlAWK4f0AtMU+qFSRf8A2gx5uf/VY7OZlnyj3Sqyb\n7kLZUq7jHCbPksupxrYfxsD54Qo7HmNVy1rbMaUCgYBRDAgMtgJovATSRQfwJZSy\nTei9saqYhEGhJYMo5L1kUknQW/3dTThisxLKayzWyvF0dTiO9ZOdx+nqM5tnV3yL\nr0CEE5nAhvuSSxIN+qTHxLMEH5dVqW7v4KStXAO1k/qtYx6pYVpV8eMNrPl/nHj7\n+r28YBPpUETnosU+KpTQSw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "kpo-labs@kpo-labs.iam.gserviceaccount.com",
+  "client_id": "115455978565235973865",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/kpo-labs%40kpo-labs.iam.gserviceaccount.com"
+}
