@@ -108,7 +108,7 @@ public class GraphBuilder implements Runnable, IFillNullFields<GraphBuilder> {
      * @return вершина-потомок
      */
     private Vertex addVertexTo(DelegateTree<Vertex, Edge> tree, List<Vertex> children,
-                             Vertex parent, int parentNumber, int vertexNumber) {
+                               Vertex parent, int parentNumber, int vertexNumber) {
         Vertex child = new Vertex(parentNumber + 1, vertexNumber);
         tree.addChild(new Edge(), parent, child, EdgeType.DIRECTED);
         children.add(child);
