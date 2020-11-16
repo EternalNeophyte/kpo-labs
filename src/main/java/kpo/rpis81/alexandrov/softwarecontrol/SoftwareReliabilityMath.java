@@ -91,7 +91,6 @@ public class SoftwareReliabilityMath {
             xSquaredSum += counter * counter;
             xByYSum += counter * intermediateValue.doubleValue() * exp;
         }
-        System.out.println("ex.size=" + errorsList.size());
         a = (errorsList.size() * xByYSum - xSum * ySum) / (errorsList.size() * xSquaredSum - xSum * xSum);
         b = (ySum - a * xSum) / errorsList.size();
         return new HashMap<>(Map.of(
