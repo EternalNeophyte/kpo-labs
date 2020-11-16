@@ -1,5 +1,7 @@
 package kpo.rpis81.alexandrov.tools;
 
+import kpo.rpis81.alexandrov.softwarecontrol.SoftwareReliabilityTester;
+
 /**
  * Точка входа в программу
  * @author Илья Александров
@@ -21,6 +23,16 @@ public class Runner {
                 .createManyTrees()
                 .exportTask4ToGoogleSheets()
                 .waitForWindowClosing();
+        SoftwareReliabilityTester.deploy()
+                .addErrors(4)
+                .addErrors(3)
+                .addErrors(2)
+                .addErrors(1)
+                .addErrors(0)
+                .addErrors(1)
+                .addErrors(0)
+                .init()
+                .exportTasksToGoogleSheets();
     }
 }
 

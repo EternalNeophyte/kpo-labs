@@ -24,10 +24,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.math.BigDecimal;
 import java.security.GeneralSecurityException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
  * Класс для интеграции с Google Sheets API. Содержит служебные константы,
@@ -180,5 +179,16 @@ public class DataExporter {
                 List.of("Дисперсия альфа", GraphMath.varianceForAlpha(trees)),
                 List.of("Мат. ожидание альфа", GraphMath.meanForAlpha(trees))
         ));
+    }
+
+    /**
+     * Оборачивает данные из
+     * @param map в
+     * @return список типа List<List<Object>>
+     */
+    public static List<List<Object>> wrapParametersFor(HashMap<String, BigDecimal> map) {
+        List<List<Object>> data = new ArrayList<>();
+        map.forEach((k, v) -> data.add(List.of(k, v)));
+        return data;
     }
 }
