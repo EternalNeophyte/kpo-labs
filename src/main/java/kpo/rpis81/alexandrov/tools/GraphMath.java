@@ -135,8 +135,9 @@ public class GraphMath {
      */
     public static double varianceForVertices(List<DelegateTree<Vertex, Edge>> trees) {
         List<Double> vertexSeries = new ArrayList<>();
-        return evaluate(VARIANCE, vertexSeries, trees,
-                t -> vertexSeries.add((double) t.getVertexCount()));
+        List<DelegateTree<Vertex, Edge>> copiedTrees = new ArrayList<>(trees);
+        return evaluate(VARIANCE, vertexSeries, copiedTrees,
+                t -> vertexSeries.add((double) vertexCount(t)));
     }
 
     /**
@@ -147,7 +148,8 @@ public class GraphMath {
      */
     public static double varianceForLeaves(List<DelegateTree<Vertex, Edge>> trees) {
         List<Double> leafSeries = new ArrayList<>();
-        return evaluate(VARIANCE, leafSeries, trees, t -> leafSeries.add((double) leavesCount(t)));
+        List<DelegateTree<Vertex, Edge>> copiedTrees = new ArrayList<>(trees);
+        return evaluate(VARIANCE, leafSeries, copiedTrees, t -> leafSeries.add((double) leavesCount(t)));
     }
 
     /**
@@ -158,7 +160,8 @@ public class GraphMath {
      */
     public static double varianceForAlpha(List<DelegateTree<Vertex, Edge>> trees) {
         List<Double> alphaSeries = new ArrayList<>();
-        return evaluate(VARIANCE, alphaSeries, trees, t -> alphaSeries.add(alpha(t)));
+        List<DelegateTree<Vertex, Edge>> copiedTrees = new ArrayList<>(trees);
+        return evaluate(VARIANCE, alphaSeries, copiedTrees, t -> alphaSeries.add(alpha(t)));
     }
 
     /**
@@ -169,7 +172,8 @@ public class GraphMath {
      */
     public static double varianceForHeight(List<DelegateTree<Vertex, Edge>> trees) {
         List<Double> heightSeries = new ArrayList<>();
-        return evaluate(VARIANCE, heightSeries, trees, t -> heightSeries.add((double) t.getHeight()));
+        List<DelegateTree<Vertex, Edge>> copiedTrees = new ArrayList<>(trees);
+        return evaluate(VARIANCE, heightSeries, copiedTrees, t -> heightSeries.add((double) t.getHeight()));
     }
 
     /**
@@ -180,7 +184,8 @@ public class GraphMath {
      */
     public static double meanForAlpha(List<DelegateTree<Vertex, Edge>> trees) {
         List<Double> alphaSeries = new ArrayList<>();
-        return evaluate(MEAN, alphaSeries, trees, t -> alphaSeries.add(alpha(t)));
+        List<DelegateTree<Vertex, Edge>> copiedTrees = new ArrayList<>(trees);
+        return evaluate(MEAN, alphaSeries, copiedTrees, t -> alphaSeries.add(alpha(t)));
     }
 
     /**
