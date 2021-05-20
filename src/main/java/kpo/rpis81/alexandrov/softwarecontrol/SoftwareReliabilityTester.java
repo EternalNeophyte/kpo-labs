@@ -25,7 +25,7 @@ import java.util.Objects;
  */
 public class SoftwareReliabilityTester {
 
-    private static final double CONDITIONAL_ZERO = 0.0001d;
+    private static final double CONDITIONAL_ZERO = 0.01d;
     private static final BigDecimal STEP = BigDecimal.valueOf(CONDITIONAL_ZERO);
     private static final BigDecimal STOPPER = BigDecimal.valueOf(1);
     private static final BigDecimal LIMITER = STOPPER.subtract(STEP);
